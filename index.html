@@ -1,0 +1,243 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+  <title>FFRAJESPORTS Tournament App</title>  
+
+  <!-- SEO Meta Tags -->  
+  <meta name="description" content="FFRAJESPORTS is the ultimate esports tournament app for Android. Join, organize, and manage gaming tournaments with ease. Download now!">  
+  <meta name="keywords" content="FFRAJESPORTS, esports app, tournament app, gaming, Android esports, game competition, online tournaments">  
+  <meta name="author" content="FFRAJESPORTS">  
+  <meta name="robots" content="index, follow">  
+
+  <!-- Open Graph Tags (for social media) -->  
+  <meta property="og:title" content="FFRAJESPORTS Tournament App">  
+  <meta property="og:description" content="Join, organize, and manage gaming tournaments with FFRAJESPORTS. Download the app now.">  
+  <meta property="og:image" content="https://iili.io/FwaMY6G.md.jpg">  
+  <meta property="og:url" content="https://champions-warzone.github.io/Champions-warzone-/">  
+  <meta property="og:type" content="website">  
+  
+  <style>  
+    body {  
+      font-family: Arial, sans-serif;  
+      margin: 0;  
+      padding: 0;  
+      background-color: black;  
+      color: white;  
+      display: flex;  
+      flex-direction: column;  
+      min-height: 100vh;  
+    }  
+
+    header {  
+      background-color: #222;  
+      padding: 20px;  
+      text-align: center;  
+    }  
+
+    header h1 {  
+      margin: 0;  
+      font-size: 2.5em;  
+    }  
+
+    section {  
+      padding: 40px 20px;  
+      text-align: center;  
+      flex: 1;  
+    }  
+
+    .section-title {  
+      font-size: 2em;  
+      margin-bottom: 20px;  
+    }  
+
+    .logo-container {  
+      text-align: center;  
+      margin-top: 40px;  
+    }  
+
+    .logo {  
+      width: 150px;  
+      border-radius: 15px;  
+    }  
+
+    .download-btn {  
+      background-color: red;  
+      color: white;  
+      padding: 10px 20px;  
+      font-size: 1em;  
+      border: none;  
+      cursor: pointer;  
+      text-decoration: none;  
+      border-radius: 5px;  
+      margin-top: 20px;  
+      display: inline-block;  
+      box-shadow: 0 0 12px rgba(255, 0, 0, 0.6), 0 0 20px rgba(255, 0, 0, 0.4);  
+      transition: all 0.3s ease;  
+    }  
+
+    .download-btn:hover {  
+      background-color: #ff1a1a;  
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.6);  
+    }  
+
+    .slider-container {
+      position: relative;
+      width: 100%;
+      max-width: 320px;
+      margin: 40px auto;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      flex-shrink: 0;
+    }
+
+    .arrow-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 20px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .arrow-btn:hover {
+      background-color: #ff1a1a;
+    }
+
+    .left-arrow {
+      left: -5px;
+    }
+
+    .right-arrow {
+      right: -5px;
+    }
+
+    footer {  
+      background-color: #222;  
+      color: white;  
+      padding: 10px;  
+      text-align: center;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <header>  
+    <h1>FFRAJESPORTS</h1>  
+    <p>Your ultimate tournament platform</p>  
+  </header>  
+
+  <section>  
+    <h2 class="section-title">About FFRAJESPORTS</h2>  
+    <p>FFRAJESPORTS is an innovative platform for organizing and participating in tournaments. Our platform offers seamless tournament management, live updates, and engaging user experiences.</p>  
+
+    <div class="logo-container">  
+      <img src="https://iili.io/FwaMY6G.md.jpg" alt="FFRAJESPORTS Logo" class="logo"/>  
+      <br>  
+      <a href="https://ga-fs.primexop.com/4314/androidBuilds/ff-raj-esportsV1.apk" class="download-btn" download>  
+        Download FFRAJESPORTS  
+      </a>  
+    </div>  
+
+    <!-- App Screenshot Section -->  
+    <h2 class="section-title">App Screenshots</h2>
+    <div class="slider-container">
+      <button class="arrow-btn left-arrow" onclick="moveSlide(-1)">&#8592;</button>
+      <div class="slides" id="slides">
+        <img src="https://iili.io/Fwaw6Pt.md.jpg" alt="Screenshot 1">
+        <img src="https://iili.io/FwawvHJ.md.jpg" alt="Screenshot 2">
+        <img src="https://iili.io/Fwaw8Av.md.jpg" alt="Screenshot 3">
+      </div>
+      <button class="arrow-btn right-arrow" onclick="moveSlide(1)">&#8594;</button>
+    </div>
+  </section>  
+  
+    <!-- Counter Section -->
+  <div id="counter-section" style="background: linear-gradient(rgba(38, 105, 174, 0.95), rgba(38, 105, 174, 0.95)); text-align: center; padding: 60px 20px; color: white;">
+    <div style="margin-bottom: 40px;">
+      <img src="https://iili.io/FcYFIta.png" alt="Tournaments" style="width: 80px;" />
+      <div id="counter1" style="font-size: 2.5rem; font-weight: bold;">0</div>
+      <div style="font-size: 1.5rem;">Tournaments Played</div>
+    </div>
+    <div style="margin-bottom: 40px;">
+      <img src="https://iili.io/FcaCWJ4.png" alt="Participants" style="width: 80px;" />
+      <div id="counter2" style="font-size: 2.5rem; font-weight: bold;">0</div>
+      <div style="font-size: 1.5rem;">Total Participants</div>
+    </div>
+    <div style="margin-bottom: 40px;">
+      <img src="https://iili.io/FcaR4ku.png" alt="Winning Amount" style="width: 80px;" />
+      <div id="counter3" style="font-size: 2.5rem; font-weight: bold;">0</div>
+      <div style="font-size: 1.5rem;">Winning Amount</div>
+    </div>
+    <div>
+      <img src="https://iili.io/Fcaavwu.png" alt="Rewards" style="width: 80px;" />
+      <div id="counter4" style="font-size: 2.5rem; font-weight: bold;">0</div>
+      <div style="font-size: 1.5rem;">Rewards</div>
+    </div>
+  </div>
+
+  <footer>  
+    <p>&copy; 2025 FFRAJESPORTS. All rights reserved.</p>  
+  </footer>  
+
+  <script>
+    let currentSlide = 0;
+
+    function moveSlide(direction) {
+      const slides = document.getElementById("slides");
+      const totalSlides = slides.children.length;
+      currentSlide += direction;
+
+      if (currentSlide < 0) currentSlide = totalSlides - 1;
+      if (currentSlide >= totalSlides) currentSlide = 0;
+
+      slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+        // Counters
+    let hasCounted = false;
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting && !hasCounted) {
+        hasCounted = true;
+        const counters = [
+          { id: 'counter1', target: 19368 },
+          { id: 'counter2', target: 25891 },
+          { id: 'counter3', target: 40538 },
+          { id: 'counter4', target: 12746 },
+        ];
+        counters.forEach(({ id, target }) => {
+          let current = 0;
+          const speed = 15;
+          const counterEl = document.getElementById(id);
+          function update() {
+            if (current < target) {
+              current += Math.ceil((target - current) / 40);
+              counterEl.textContent = current.toLocaleString();
+              setTimeout(update, speed);
+            } else {
+              counterEl.textContent = target.toLocaleString();
+            }
+          }
+          update();
+        });
+      }
+    }, { threshold: 0.5 });
+
+    observer.observe(document.getElementById('counter-section'));
+  </script>
+</body>  
+</html>
